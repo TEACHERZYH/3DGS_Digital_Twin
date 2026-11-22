@@ -1,0 +1,14 @@
+condition_id,source_status,support,event,protected_harm,rank_profile,interval_case,view_factor,primary_target
+C01,VALID_SOURCE,high,ADD,none,full,inside,normal,retention
+C02,VALID_SOURCE,medium,ADD,none,full,inside,normal,retention
+C03,VALID_SOURCE,low,REMOVE,none,full,inside,normal,retention
+C04,TRANSLATION_MISMATCH,high,ADD,none,full,inside,normal,invalid_source_leakage
+C05,ROTATION_MISMATCH,medium,REMOVE,none,full,inside,normal,invalid_source_leakage
+C06,ID_MISMATCH,low,ADD,none,full,inside,normal,invalid_source_leakage
+C07,VALID_SOURCE,medium,ADD,none,full,cross_threshold,normal,certificate_failure
+C08,VALID_SOURCE,high,ADD,within_budget,full,inside,normal,protected_p99
+C09,VALID_SOURCE,high,REMOVE,over_budget,full,inside,normal,protected_p99
+C10,VALID_SOURCE,medium,ADD,none,rank_deficient,inside,normal,unsupported_direction_write
+C11,VALID_SOURCE,low,REMOVE,none,near_null,inside,normal,unsupported_direction_write
+C12,VALID_SOURCE,low,STABLE,none,full,inside,occluded,wrong_commit
+
